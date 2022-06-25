@@ -1,0 +1,130 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Epilogue", sans-serif;
+    font-weight: $fw-medium;
+    color: $clr-mediumGray;
+}
+
+a:link,
+a:visited,
+a:active{
+    color: $clr-mediumGray;
+    text-decoration: none;
+    text-transform: capitalize; 
+    display: block;
+}
+
+a{
+    transition: all $regular-transiton;
+    display: block;
+
+    &:hover{
+        color: $clr-black;
+
+    }
+}
+
+
+ul{
+   list-style: none; 
+}
+h1{
+    line-height: 1;
+    text-transform: capitalize;
+    color: $clr-black;
+    font-weight: $fw-bold;
+}
+button{
+    border-radius: .8rem;
+    outline:none;
+    border: none;
+    padding: 0.6125rem 1rem;
+    text-transform: capitalize;
+    font-weight: $fw-bold;
+    cursor: pointer;
+
+}
+p{
+ line-height: 1.6;   
+}
+//flexbox
+
+.flex {
+    display: flex;
+    &-column{
+    flex-direction: column;
+    }
+    &-ai-center {
+        align-items: center;
+    }
+
+    &-jc-center {
+        justify-content: center;
+    }
+
+    &-jc-between {
+        justify-content: space-between;
+    }
+}
+
+
+//container
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    @include breakpoint-up(large){
+        padding : 0 1.2rem 
+    }
+    &-padding-all{
+        padding: .9rem .9rem;
+    }
+    &-padding-x{
+        padding: 0 .9rem;
+    }
+}
+//visibility
+
+.hide-for-mobile{
+@include breakpoint-down(large){
+display: none;
+}
+}
+
+.hide-for-dekstop{
+    @include breakpoint-up(large){
+    display: none;
+    }
+    }
+
+
+/*
+
+
+h1 marginb 30px
+p fontss 13px marginb 30px
+button fonts 13px paddingx 23px y 13px marginb 37px
+
+footer links fonts 17px padding 25px padding from cont 14px all texts
+
+
+mobilemenu X button  padding x 23px y 18px button paddinx y 13px x 59px links gap 29px margin before login 58px  padding left 20px(colapsed)
+(expanded) links 20px + 25px paddingleft  all same..
+
+
+
+
+*/

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header class="header flex flex-jc-between flex-ai-center">
+        <div class="header__logo">
+            <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        </div>
+        <nav class="header__nav hide-for-mobile">
+            <ul class="header__nav__list flex flex-ai-center">
+                <li class="header__nav__link features"><a href="#" id="featuresBtn">features <span><img
+                                src="./images/icon-arrow-down.svg" alt="arrow down"></span></a>
+                    <div class="features__dropdown  flex flex-column">
+                        <a href="#"><img src="./images/icon-todo.svg" alt="todo icon"> todo list</a>
+                        <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon"> calendar</a>
+                        <a href="#"><img src="./images/icon-calendar.svg" alt="remainders icon"> remainders</a>
+                        <a href="#"><img src="./images/icon-planning.svg" alt="planning icon"> planning</a>
+                    </div>
+                </li>
+                <li class="header__nav__link company"><a href="#" id="companyBtn">company <span><img
+                                src="./images/icon-arrow-down.svg" alt="arrow down"></span></a>
+                    <div class="company__dropdown flex flex-column">
+                        <a href="#">history</a>
+                        <a href="#">our team</a>
+                        <a href="#">blog</a>
+                    </div>
+                </li>
+                <li class="header__nav__link"><a href="#">careers</a></li>
+                <li class="header__nav__link"><a href="#">about</a></li>
+            </ul>
+        </nav>
+        <div class="header__sign__in flex flex-ai-center hide-for-mobile">
+            <a href="#" class="header__sign__in__login">login</a>
+            <button class="header__sign__in__register">register</button>
+        </div>
+        <div class="header__burger hide-for-dekstop">
+            <span class="line"></span>
+        </div>
+        <div class="mobile__menu">
+            <div class="mobile__menu__content flex flex-column">
+                <div class="mobile__menu__content__features"><a href="#" class="mobile-features-dropdown">features
+                        <span><img src="./images/icon-arrow-down.svg" alt="arrow down"
+                                class="mobile-features-dropdown-img"></span></a>
+                    <div class="mobile__menu__content__features__dropdown  flex flex-column">
+                        <a href="#"><img src="./images/icon-todo.svg" alt="todo icon"> todo list</a>
+                        <a href="#"><img src="./images/icon-calendar.svg" alt="calendar icon"> calendar</a>
+                        <a href="#"><img src="./images/icon-calendar.svg" alt="remainders icon"> remainders</a>
+                        <a href="#"><img src="./images/icon-planning.svg" alt="planning icon"> planning</a>
+                    </div>
+                </div>
+                <div class="mobile__menu__content__company"><a href="#" class="mobile-company-dropdown">company
+                        <span><img src="./images/icon-arrow-down.svg" alt="arrow down"
+                                class="mobile-company-dropdown-img"></span></a>
+                    <div class="mobile__menu__content__company__dropdown flex flex-column">
+                        <a href="#">history</a>
+                        <a href="#">our team</a>
+                        <a href="#">blog</a>
+                    </div>
+                </div>
+                <a href="#">careers</a>
+                <a href="#">about</a>
+                <div class="mobile__menu__content__sign__in flex flex-column">
+                    <a href="#" class="mobile__menu__content__sing__in__login">login</a>
+                    <button class="mobile__menu__content__sign__in__register">register</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <main class="hero container flex flex-column">
+
+        <div class="hero__icon">
+
+        </div>
+        <div class="hero__text container-padding-x flex flex-column">
+            <h1>make remote work</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit tempora beatae temporibus dolores
+            </p>
+            <button class="hero__btn">learn more</button>
+            <div class="hero__companies flex flex-ai-center flex-jc-between">
+                <a href="#"><img src="./images/client-databiz.svg" alt="databiz icon"></a>
+                <a href="#"><img src="./images/client-audiophile.svg" alt="audiphile icon"></a>
+                <a href="#"><img src="./images/client-meet.svg" alt="meet icon"></a>
+                <a href="#"><img src="./images/client-maker.svg" alt="maker icon"></a>
+            </div>
+
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

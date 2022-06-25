@@ -1,0 +1,61 @@
+.hero{
+    gap: 2rem;
+    @include breakpoint-up(medium){
+        flex-direction:row-reverse;
+        height: 600px;       
+    }
+    &__icon{
+        width: 100%;
+        min-height: 300px;
+        background-image: url(../../images/image-hero-mobile.png);
+        background-repeat: no-repeat;        
+        background-position: center;
+        background-size: cover;
+        @include breakpoint-up(medium){
+            background-image: url(../../images/image-hero-desktop.png);
+            background-size: 100%;
+            flex: 2;
+        }
+
+    }
+
+    &__text{
+        gap:2rem;
+        text-align: center;
+        @include breakpoint-up(medium){
+            justify-content:end;
+            text-align: left;
+            flex: 1.5;
+        gap: 2.5rem;
+
+        }
+        h1{
+            @include breakpoint-up(medium){
+                font-size: 3.6rem;
+            }
+        }
+    }
+    &__btn{
+        max-width: max-content;
+        padding: 13px 23px ;
+        margin: 0 auto;
+        color: white;
+        background: $clr-black;
+        &:hover{
+            opacity: .95;
+        }
+        @include breakpoint-up(medium){
+            margin: 0 0 4rem 0;            
+        }
+    }
+    &__companies{
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: 1fr;
+       gap: 1.5rem ;
+       img{
+           width: 100%;
+           display: block;
+       }
+    }
+}
